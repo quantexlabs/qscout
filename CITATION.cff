@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use qscout, please cite it as below."
+title: qscout
+version: 0.1.0
+date-released: 2025-09-28
+authors:
+  - name: QuanteX Labs Inc.
+    affiliation: QuanteX Labs Inc.
+    country: CA
+repository-code: "https://github.com/quantexlabs/qscout"
+license: Apache-2.0
+keywords:
+  - post-quantum cryptography
+  - cyclonedx
+  - cbom
+  - cryptographic inventory
+abstract: >-
+  Offline evidence fusion tool for post-quantum cryptography inventory,
+  producing CycloneDX 1.6 CBOM output with explainable prioritization.

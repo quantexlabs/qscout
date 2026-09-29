@@ -1,0 +1,21 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "components": [
+    {
+      "name": "kyber768",
+      "bom-ref": "pqc-1",
+      "cryptoProperties": {"algorithm": "ML-KEM-768"}
+    },
+    {
+      "name": "unknown-crypto",
+      "bom-ref": "dep-1",
+      "cryptoProperties": {"algorithm": "unknown"}
+    },
+    {
+      "name": "xmss-key",
+      "bom-ref": "fw-1",
+      "cryptoProperties": {"algorithm": "XMSS"}
+    }
+  ]
+}

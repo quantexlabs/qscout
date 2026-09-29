@@ -1,0 +1,25 @@
+{
+  "targetHost": "example.test",
+  "scanResult": [
+    {
+      "id": "TLS1",
+      "severity": "high",
+      "finding": "offered"
+    },
+    {
+      "id": "TLS1_1",
+      "severity": "high",
+      "finding": "offered"
+    },
+    {
+      "id": "cipher_TLS1_2",
+      "severity": "warn",
+      "finding": "ECDHE-RSA-AES128-GCM-SHA256"
+    },
+    {
+      "id": "cipher_weak",
+      "severity": "critical",
+      "finding": "RC4-SHA offered"
+    }
+  ]
+}

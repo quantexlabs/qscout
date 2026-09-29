@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    env:
+      PQC_INVENTORY_NO_NETWORK: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Ruff
+        run: ruff check src tests
+
+      - name: Mypy
+        run: mypy src/qscout
+
+      - name: Pyright
+        run: pyright
+
+      - name: Pytest with coverage
+        run: pytest --cov=qscout --cov-report=term-missing --cov-fail-under=90
+
+      - name: Build wheel
+        run: pip install build && python -m build
+
+      - name: Fresh venv install smoke test
+        run: |
+          python -m venv /tmp/qscout-venv
+          /tmp/qscout-venv/bin/pip install dist/*.whl
+          /tmp/qscout-venv/bin/qscout --version

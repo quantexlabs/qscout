@@ -1,0 +1,7 @@
+Apache License 2.0
+
+This directory contains the CycloneDX 1.6 Bill of Materials JSON Schema.
+
+Source: https://cyclonedx.org/schema/bom-1.6.schema.json
+The schema file includes a license comment: "CycloneDX JSON schema is published
+under the terms of the Apache License 2.0."

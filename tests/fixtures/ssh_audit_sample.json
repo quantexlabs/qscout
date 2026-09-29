@@ -1,0 +1,14 @@
+{
+  "banner": {"raw": "SSH-2.0-OpenSSH_8.0"},
+  "kex": [
+    {"algorithm": "diffie-hellman-group14-sha256", "status": "pass"},
+    {"algorithm": "ecdh-sha2-nistp256", "status": "warn"}
+  ],
+  "key": [
+    {"algorithm": "rsa1024-sha256", "status": "fail"}
+  ],
+  "mac": [
+    {"algorithm": "hmac-sha1", "status": "warn"}
+  ],
+  "enc": []
+}

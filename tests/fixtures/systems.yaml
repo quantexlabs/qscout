@@ -1,0 +1,13 @@
+systems:
+  - system_id: web-app-01
+    name: Customer Portal
+    criticality: 5
+    confidentiality_years: 15
+    exposure: internet
+    description: Public-facing web application
+  - system_id: internal-api
+    name: Internal API
+    criticality: 3
+    confidentiality_years: 5
+    exposure: internal
+    description: Internal service mesh API
