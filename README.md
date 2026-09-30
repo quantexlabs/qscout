@@ -1,3 +1,10 @@
+<p align="center" class="brand-mark">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset=".github/brand/quantex-mark-dark.png">
+    <img src=".github/brand/quantex-mark.png" alt="QuanteX Labs" width="120">
+  </picture>
+</p>
+
 # qscout
 
 Offline evidence fusion for post-quantum cryptography inventory: an open-source tool by **QuanteX Labs Inc.** that helps teams see where their systems rely on cryptography that quantum computers could break, and plan the migration.
