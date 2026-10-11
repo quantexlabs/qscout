@@ -51,7 +51,7 @@ Repository = "https://github.com/quantexlabs/qscout"
 packages = ["src/qscout"]
 
 [tool.hatch.build.targets.sdist]
-only-include = ["src/qscout", "tests", "README.md", "LICENSE"]
+only-include = ["src/qscout", "tests", "README.md", "LICENSE", "NOTICE"]
 
 [tool.ruff]
 target-version = "py311"
