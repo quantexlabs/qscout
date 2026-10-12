@@ -2,7 +2,7 @@
 
 All notable changes to qscout are documented in this file.
 
-## [0.2.0] - 2025-09-28
+## [0.2.0] - 2026-09-28
 
 ### Fixed
 
@@ -30,7 +30,7 @@ All notable changes to qscout are documented in this file.
   hybrid detection, CBOM round-trip, and hostile HTML output
 - README "Open by design" section
 
-## [0.1.0] - 2025-09-28
+## [0.1.0] - 2026-09-28
 
 ### Added
 
