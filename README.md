@@ -11,6 +11,8 @@ Offline evidence fusion for post-quantum cryptography inventory: an open-source 
 
 qscout is a planning aid. It does not certify compliance with any standard, and it is not legal or security-assurance advice. No clients or deployments are claimed.
 
+**Status:** early-stage research prototype. It has not been tested on real systems or compared with other tools. It can miss cryptography or flag it wrongly. Check every finding before you act on it.
+
 ## Open by design
 
 **We build in the open.** QuanteX Labs Inc. publishes its tools, methods and learning materials under open licences, so public-interest teams can use them, check how they work and adapt them freely. Open work is easier to trust, because anyone can see exactly how a result is produced. Code is licensed under Apache-2.0.
@@ -111,7 +113,8 @@ Standards mapping uses "informed by" unless an exact citation applies.
 qscout emits `cryptoProperties` with `assetType` and the appropriate
 `algorithmProperties` or `certificateProperties` structures per CycloneDX 1.6.
 The official JSON schema is vendored at `src/qscout/schemas/bom-1.6.schema.json`
-(Apache-2.0, source: https://cyclonedx.org/schema/bom-1.6.schema.json).
+(Apache-2.0, from the CycloneDX specification at tag 1.6.2, minified; see
+`src/qscout/schemas/LICENSE`).
 CI validates representative CBOM output against this schema.
 
 ## Development

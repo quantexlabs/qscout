@@ -2,6 +2,11 @@ Apache License 2.0
 
 This directory contains the CycloneDX 1.6 Bill of Materials JSON Schema.
 
-Source: https://cyclonedx.org/schema/bom-1.6.schema.json
+Project: CycloneDX, an OWASP Foundation project (https://cyclonedx.org).
+Source: https://github.com/CycloneDX/specification, file schema/bom-1.6.schema.json
+at tag 1.6.2 (also published at https://cyclonedx.org/schema/bom-1.6.schema.json).
+Licence: Apache License 2.0.
+Change: QuanteX Labs Inc. removed the whitespace (the JSON is minified). The
+content is otherwise unchanged.
 The schema file includes a license comment: "CycloneDX JSON schema is published
 under the terms of the Apache License 2.0."

@@ -39,8 +39,8 @@ All notable changes to qscout are documented in this file.
 - Offline evidence fusion from source, configs, certificates, manifests
 - Import adapters for testssl.sh, ssh-audit, and sonar-cryptography JSON
 - CycloneDX 1.6 CBOM export
-- Twelve checks (CRYPTO-001 through CRYPTO-012) mapped to NIST FIPS 203/204/205,
-  SP 800-208, and CCCS guidance
+- Twelve checks (CRYPTO-001 through CRYPTO-012) informed by NIST FIPS 203, 204
+  and 205, SP 800-208, and CCCS guidance
 - Explainable priority scoring with `systems.yaml` context
 - Accessible HTML report generation
 - Security controls: URL validation, path traversal protection, safe YAML,
