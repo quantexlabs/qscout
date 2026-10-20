@@ -15,9 +15,9 @@ qscout is a planning aid. It does not certify compliance with any standard, and 
 
 ## Open by design
 
-**We build in the open.** QuanteX Labs Inc. publishes its tools, methods and learning materials under open licences, so public-interest teams can use them, check how they work and adapt them freely. Open work is easier to trust, because anyone can see exactly how a result is produced. Code is licensed under Apache-2.0.
+**Open source, so every finding can be checked.** qscout is under Apache-2.0, so a team can read exactly how each finding and priority score is produced, and change it. **Our own work.** The code, tests and examples are QuanteX Labs Inc.'s own; the examples are synthetic, with no client data. One file is third-party: the CycloneDX 1.6 JSON schema from the OWASP Foundation, used under the Apache License 2.0 (see src/qscout/schemas/LICENSE).
 
-**Our own work, plus one open standard.** QuanteX Labs Inc. wrote the code, tests and examples in this repository. The examples are synthetic. There is no client data and there are no client projects. One file comes from a third party: the CycloneDX 1.6 JSON schema from the OWASP Foundation, used under the Apache License 2.0. See src/qscout/schemas/LICENSE.
+## What it does
 
 qscout correlates cryptographic findings from local source code, configuration files,
 X.509 certificates, dependency manifests, and imported endpoint scan results
@@ -132,3 +132,5 @@ python -m venv /tmp/qscout-venv && /tmp/qscout-venv/bin/pip install dist/*.whl
 ## License
 
 Apache-2.0. Copyright 2026 QuanteX Labs Inc.
+
+Its code and documentation were written with AI coding assistants under the direction of Amir Daneshpajouh, and checked by their tests and an AI-assisted release check before publication.
